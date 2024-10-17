@@ -116,7 +116,7 @@ else
 	echo "CONFIG_BAUDRATE=115200" >> ${DEFCONFIG}
 fi
 
-make mt7621_build_defconfig
+make mt7621_ax_rfb_defconfig
 make CROSS_COMPILE=${Toolchain} STAGING_DIR=${Staging}
 make savedefconfig
 mkdir archive
